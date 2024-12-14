@@ -1,0 +1,24 @@
+@font-face {
+    font-family: font1;
+    src: url(../fonts/MontserratSemibold-8M8PB.otf);
+}
+
+@font-face {
+    font-family: metropolis;
+    src: url(../fonts/MetropolisPersonalUseRegular-nR5LY.ttf);
+}
+
+@font-face {
+    font-family: rushford;
+    src: url(../fonts/Rushfordclean-rgz89.otf);
+}
+
+@font-face {
+    font-family: zector;
+    src: url(../fonts/Zector.ttf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(../fonts/the_students_teacher/TheStudentsTeacher-Regular.ttf);
+}

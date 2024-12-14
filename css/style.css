@@ -1,0 +1,692 @@
+@import url(fonts.css);
+*{padding: 0 !important; margin: 0;box-sizing: border-box !important;list-style: none !important;}
+
+
+/*///////////////////     GRID SYSTEM      ////////////////////////*/
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px !important;
+}
+
+
+/* .text-color-white{
+    color
+} */
+/*///////////////////     GRID SYSTEM      ////////////////////////*/
+
+
+body{
+    width: 100%;
+    min-height: 5000px;
+    background-color: #F1F1F1;
+}
+
+header{
+    width: 100%;
+    min-height: 1000px;
+    background-color: #F1F1F1;
+}
+
+
+/* START OF NAVBAR */
+#topheader{
+    width: 100%;
+    height: 40px;
+    z-index: 1000;
+}
+
+nav{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* FOLLOW US */
+
+ul{
+    width: 20%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul li a{
+    width: 94px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-family: font1;
+    /*I-did-that-because-I-want-it-to-take-the-full-width*/display: inline-block;
+    color: white;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+ul li a:hover{
+    background-color: #F1F1F1;
+    color: black;
+}
+
+/* LOGO */
+
+.logo-nav{
+    width: 7.5%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    font-family: metropolis;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.logo-nav:hover{
+    background-color: #F1F1F1;
+    color: black;
+    cursor:pointer;
+}
+
+/* END OF NAVBAR */
+
+
+/* START OF MID HEADER */
+#mid-header{
+    width: 85%;
+    height: 250px;
+    position: relative;
+    background-color: white;
+    margin: auto;
+}
+
+.head{
+    width: 90%;
+    height: 60px;
+    font-size: 26px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 4px;
+    font-family: rushford;
+    overflow: hidden;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.midhead{
+    width: 90%;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    font-family: font1;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.midhead span{
+    width: 100px;
+    height: 24px;
+    padding: 5px !important;
+    background-color: black;
+    color: white;
+}
+
+/* END OF MID HEADER */
+
+/* START OF BOTTOM HEADER */
+#bottom-header{
+    width: 85%;
+    height: 1060px;
+    background: url(../images/jane.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.fashion{
+    width: 450px;
+    height: 250px;
+    padding: 30px !important;
+}
+
+.fashion h3{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-family: font1;
+}
+
+.fashion h1{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 10px;
+    font-size: 45px;
+    font-family: font1;
+}
+
+.fashion button{
+    width:150px;
+    height: 50px;
+    font-size: 20px;
+    font-family: font1;
+    border: none;
+    border: 0.5px solid #A0A0A0;
+    background-color: #A0A0A0;
+    transition: all;
+    -webkit-transition: all;
+    -moz-transition: all;
+    -ms-transition: all;
+    -o-transition: all;
+}
+
+.fashion button:hover{
+    background-color: #CCCCCC;
+    cursor: pointer;
+}
+/* END OF BOTTOM HEADER */
+
+/* START OF POSTS AND INFORMATION SECTION */
+section{
+    width: 85%;
+    min-height: 3000px;
+    padding: 15px !important;
+    margin: auto;
+    border: 1px solid #CCCCCC;
+    overflow: hidden !important;
+}
+
+/* POSTS SECTION */
+
+.posts{
+    min-height: 2000px;
+    overflow: hidden;
+}
+
+/* FIRST POST */
+.first-post{
+    min-height: 900px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.head-post{
+    height: 100px;
+    text-align: center;
+    overflow: hidden;
+} 
+
+.head-post h1{
+    height: 30px;
+    font-family: font1;
+    margin-bottom: 8px;
+}
+
+.head-post h3{
+    height: 30px;
+    font-family: font1;
+    line-height: 30px;
+}
+
+.head-post h3 span{
+    color: #A0A0A0;
+}
+
+/* IMAGE */
+.post-image{
+    width:100%;
+    margin-bottom: 25px;
+}
+
+/* POST DESCRIPTION */
+.post-desc1{
+    width: 100%;
+    min-height: 150px;
+    font-size: 19px;
+    font-family: font2;
+}
+
+/* LIKE AND REPLY */
+
+#keply{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.like{
+    width: 80px;
+    height:40px;
+    font-size: 16px;
+    font-family: font1;
+    border: none;
+    border: 0.5px solid #A0A0A0;
+    background-color: white;
+    transition: all;
+    -webkit-transition: all;
+    -moz-transition: all;
+    -ms-transition: all;
+    -o-transition: all;
+}
+
+.like:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.reply{
+    width: 120px;
+    height:40px;
+    font-size: 16px;
+    border: none;
+    border: 0.5px solid #A0A0A0;
+    padding: 10px !important;
+    font-family: font1;
+    background-color: black;
+    color: white;
+    transition: all;
+    -webkit-transition: all;
+    -moz-transition: all;
+    -ms-transition: all;
+    -o-transition: all;
+}
+
+.reply:hover{
+    background-color: #A0A0A0;
+    color: black;
+    cursor: pointer;
+}
+
+.reply b span{
+    padding-top: 2.5px !important;
+    padding-right: 8px !important;
+    padding-bottom: 2.5px !important;
+    padding-left: 8px !important;
+    color: black;
+    background-color: white;
+}
+
+hr{
+    width: 95%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* COMMENT SECTION */
+.comment{
+    width: 100%;
+    display: flex;
+    height: 120px;
+}
+
+.comment-pic{
+    width: 20%;
+    height: 120px;
+}
+
+.comment-text{
+    width: 80%;
+    position: relative;
+    height: 120px;
+
+}
+
+.inner-comment{
+    width: 100%;
+    height: 65px;
+    top: 50%;
+    margin-top: -32.5px;
+    position: absolute;
+}
+
+.comment-text p{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: font1;
+    font-weight: bold;
+}
+
+.comment-text p span{font-size: 14px;   color: #A0A0A0;}
+
+/* COMMENT OF PERSON */
+.coment-txt{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-family: zector;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* SECOND POST DESCRIPTION */
+.post-desc2{
+    width: 100%;
+    height: 100px;
+    font-size: 19px;
+    font-family: font2;
+}
+
+/* THIRD POST */
+
+.third-post{
+    min-height: 900px;
+    background-color: white;
+}
+
+.post-desc3{
+    width: 100%;
+    min-height: 100px;
+    font-size: 19px;
+    font-family: font2;
+}
+
+
+/* INFORMATION SECTION */
+
+.information{
+    min-height: 2000px;
+}
+
+.myname{
+    width: 100%;
+    min-height: 450px;
+}
+
+.myname-pic{
+    width: 100%;
+    min-height: 250px;
+}
+
+
+.myname-pic img{
+    width: 100%;
+    height: 280px;
+    display: block;
+    filter: grayscale(80%);
+    -webkit-filter: grayscale(80%);
+}
+
+.myname-info{
+    width:100%;
+    height:170px;
+    background-color: #000;
+}
+
+.myname-info span{
+    color: white;
+    font-family: font1;
+    font-size: 20px;
+}
+
+.myname-info p{
+    color: white;
+    font-family: font1;
+    font-size: 15px;
+}
+
+
+.hr1{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+#popular{
+    min-height: 420px;
+}
+
+.head-title{
+    height: 60px;
+    background-color: #000;
+}
+
+.popular-posts{
+    height: 30px;
+    line-height: 30px;
+    font-family: font1;
+    font-size: 18px;
+    color: white;
+
+}
+
+.body-p1{
+    width: 100%;
+    height: 90px;
+    float: left;
+    background-color: white;
+    padding: 15px !important;
+    overflow: hidden;
+    border-bottom: 0.5px solid #CCCCCC;
+}
+
+.body-p1:hover{
+    background-color: #CCCCCC;
+}
+.body-p1-image{
+    width: 12.5%;
+    height: auto;
+    margin-right: 10px;
+    float: left;
+}
+
+.name{
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    font-size: 18px;
+    font-family: font1;
+}
+
+.pname{
+    width: 50%;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    font-size: 14px;
+    font-family: font1;
+}
+
+
+/* ADVERTISE */
+
+.advertise{
+    width: 100%;
+    min-height:300px;
+    overflow: hidden;
+}
+
+.ad{
+    width: 100%;
+    height: 220px;
+    text-align: center;
+    font-family: font1;
+    line-height: 220px;
+    background-color: #f1f1f1;
+}
+
+/* TAGS */
+.tags{
+    width: 100%;
+    min-height:150px;
+    overflow: hidden;
+}
+
+
+.tags-names{
+    width: 100%;
+    min-height:130px;
+    background-color: white;
+}
+
+.tagname1{
+    width: fit-content;
+    height: fit-content;
+    float: left;
+    background-color: #000;
+    color: white;
+    font-family: font1;
+    font-size: 13px;
+    padding: 5px !important;
+    margin: 3px;
+}
+
+.tagnames{
+    width: fit-content;
+    height: fit-content;
+    float: left;
+    font-family: font1;
+    font-size: 13px;
+    background-color: #F1F1F1;
+    padding: 5px !important;
+    margin: 4px;
+}
+
+/* INSPIRATION */
+.inspiration{
+    width: 100%;
+    padding: 15px !important;
+    height:350px;
+    display: grid;
+    grid-template-rows: repeat(2,150px);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1em;
+    background-color: white;
+}
+
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    height:175px;
+    padding: 30px !important;
+    background-color: #616161;
+}
+
+.top-button{
+    width: 150px;
+    height:50px;
+    font-size: 16px;
+    border: none;
+    display: block;
+    font-family: font1;
+    background-color: black;
+    transition: all;
+    -webkit-transition: all;
+    -moz-transition: all;
+    -ms-transition: all;
+    -o-transition: all;
+    margin-bottom: 20px;
+    overflow: hidden;
+    
+}
+
+.top-button a{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    /* border: 1px solid red; */
+}
+
+.top-button:hover{
+    background-color: #A0A0A0;
+    color: black;
+    cursor: pointer;
+}
+
+#facebook{
+    width: 50%;
+    height:60px;
+    line-height: 70px;
+    background-color: black;
+    position: relative;
+    left: 25%;
+    text-align: center;
+    font-size: 26px;
+    font-family: font2;
+    display: inline-block;
+    border: none;
+    border: 0.5px solid #000;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#facebook:hover{
+    color: black;
+    background-color: #A0A0A0;
+}
+
+
